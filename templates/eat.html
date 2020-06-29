@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<h3>점심 메뉴를 고르지 못했다! 점심은 무엇을 먹을까?</h3>
+<a href={{ url_for("eat_num", num=1) }}>한식</a><br>
+<a href={{ url_for("eat_num", num=2) }}>중식</a><br>
+<a href={{ url_for("eat_num", num=3) }}>일식</a><br>
+{% endblock %}

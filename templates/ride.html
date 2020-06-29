@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<h3>약속 시간에 맞춰서 가야 한다! 대중교통 중 무엇을 이용할까?</h3>
+<a href={{ url_for("ride_num", num=1) }}>택시</a><br>
+<a href={{ url_for("ride_num", num=2) }}>버스</a><br>
+<a href={{ url_for("ride_num", num=3) }}>지하철</a><br>
+{% endblock %}
